@@ -7,7 +7,7 @@ use Workerman\Connection\TcpConnection;
 include __DIR__ . '/vendor/autoload.php';
 
 // 启动一个webserver，用于吐html css js，方便展示
-// 这个webserver服务不是必须的，可以将这些html css js文件放到你的项目下用nginx或者apache跑d
+// 这个webserver服务不是必须的，可以将这些html css js文件放到你的项目下用nginx或者apache运行
 $web = new Worker('http://0.0.0.0:2123');
 $web->name = 'web';
 
